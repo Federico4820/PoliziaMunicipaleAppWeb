@@ -1,0 +1,34 @@
+﻿@model PoliziaMunicipaleAppWeb.Models.Anagrafica
+@{
+    ViewData["Title"] = "Aggiungi Trasgressore";
+}
+
+<h2>Aggiungi Trasgressore</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label>Cognome</label>
+        <input asp-for="Cognome" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Nome</label>
+        <input asp-for="Nome" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Indirizzo</label>
+        <input asp-for="Indirizzo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Città</label>
+        <input asp-for="Citta" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>CAP</label>
+        <input asp-for="CAP" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Codice Fiscale</label>
+        <input asp-for="Cod_Fisc" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Salva</button>
+</form>
